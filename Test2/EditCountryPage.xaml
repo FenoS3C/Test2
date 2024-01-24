@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test2.EditCountryPage"
+             Title="Редактировать страну">
+    <StackLayout Spacing="10">
+        <Entry x:Name="nameEntry" Placeholder="Название страны" />
+        <Entry x:Name="populationEntry" Placeholder="Население" />
+        <Entry x:Name="capitalEntry" Placeholder="Столица" />
+        <Entry x:Name="currencyEntry" Placeholder="Валюта" />
+        <Button Text="Сохранить" Clicked="OnSaveClicked" />
+    </StackLayout>
+
+</ContentPage>

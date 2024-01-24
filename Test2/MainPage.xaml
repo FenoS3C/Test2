@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test2.MainPage" Loaded="ContentPage_Loaded" >
+
+    <StackLayout Spacing="10" >
+        <ListView x:Name="CountyLV" ItemSelected="CountyLV_ItemSelected" ItemTapped="CountyLV_ItemTapped" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                            <Label Text="{Binding Name}"></Label>
+                        </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate> 
+    </ListView>
+        <Button Text="Добавить" Clicked="Button_Clicked"></Button>
+        <Button Text="Сохранить" Clicked="Button_Clicked_1"></Button>
+        <Button Text="Общее население" Clicked="Button_Clicked_3"></Button>
+
+        
+    </StackLayout>
+
+</ContentPage>

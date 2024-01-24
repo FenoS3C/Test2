@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test2.CountryDetailPage"
+             Title="Полная информация">
+    <StackLayout>
+        <Label Text="{Binding Name}" FontAttributes="Bold" />
+        <Label Text="{Binding Population, StringFormat='Население: {0:N0}'}" />
+        <Label Text="{Binding Capital}" />
+        <Label Text="{Binding Currency}" />
+        <Button Text="Редактировать" Clicked="Button_Clicked"></Button>
+        <Button Text="Удалить" Clicked="Button_Clicked_1"></Button>
+    </StackLayout>
+</ContentPage>
